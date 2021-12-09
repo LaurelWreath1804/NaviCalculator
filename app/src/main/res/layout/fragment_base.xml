@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.base.BaseFragment">
+
+    <EditText
+    android:id="@+id/result"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:ems="10"
+    android:inputType="textPersonName"
+    android:minHeight="48dp"
+    android:text="@string/result"
+    android:textSize="20sp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toEndOf="@+id/result_symbol"
+    app:layout_constraintTop_toBottomOf="@+id/to_symbol" />
+
+    <TextView
+        android:id="@+id/result_symbol"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="#FFEB3B"
+        android:backgroundTint="#00BCD4"
+        android:gravity="center_vertical"
+        android:text="@string/result_symbol"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/from_symbol" />
+
+    <TextView
+        android:id="@+id/convert_symbol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#FFEB3B"
+        android:backgroundTint="#00BCD4"
+        android:gravity="center_vertical"
+        android:minHeight="48dp"
+        android:text="@string/Convert_symbol"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/numberEntered"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:text="@string/enterNumber"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/convert_symbol"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/from_symbol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#00BCD4"
+        android:backgroundTint="#FFC107"
+        android:gravity="center_vertical"
+        android:minHeight="48dp"
+        android:text="@string/from_base"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/convert_symbol" />
+
+    <Spinner
+        android:id="@+id/fromSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:minHeight="48dp"
+        app:layout_constraintStart_toEndOf="@+id/from_symbol"
+        app:layout_constraintTop_toBottomOf="@+id/numberEntered" />
+
+    <TextView
+        android:id="@+id/to_symbol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#00BCD4"
+        android:backgroundTint="#FFC107"
+        android:gravity="center_vertical"
+        android:minHeight="48dp"
+        android:text="@string/to_base"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/fromSpinner"
+        app:layout_constraintTop_toBottomOf="@+id/numberEntered" />
+
+    <Spinner
+        android:id="@+id/toSpinner"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/to_symbol"
+        app:layout_constraintTop_toBottomOf="@+id/numberEntered" />
+
+    <Button
+        android:id="@+id/convert_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/convert_button"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/result" />
+</androidx.constraintlayout.widget.ConstraintLayout>

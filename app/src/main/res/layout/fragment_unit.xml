@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.unit.UnitFragment">
+
+    <EditText
+        android:id="@+id/result1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:inputType="textPersonName|numberDecimal"
+        android:minHeight="48dp"
+        android:text="@string/result1"
+        android:textSize="20sp"
+        android:focusable="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/result_symbol1"
+        app:layout_constraintTop_toBottomOf="@+id/to_symbol1" />
+
+    <TextView
+        android:id="@+id/result_symbol1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="#FFEB3B"
+        android:backgroundTint="#00BCD4"
+        android:gravity="center_vertical"
+        android:text="@string/result_symbol1"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/from_symbol1" />
+
+    <TextView
+        android:id="@+id/convert_symbol1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#FFEB3B"
+        android:backgroundTint="#00BCD4"
+        android:gravity="center_vertical"
+        android:minHeight="48dp"
+        android:text="@string/Convert_symbol1"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/numberEntered1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        android:text="@string/enterNumber1"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/convert_symbol1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/from_symbol1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#00BCD4"
+        android:backgroundTint="#FFC107"
+        android:gravity="center_vertical"
+        android:minHeight="48dp"
+        android:text="@string/from_base1"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/convert_symbol1" />
+
+    <Spinner
+        android:id="@+id/fromSpinner1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:minHeight="48dp"
+        app:layout_constraintStart_toEndOf="@+id/from_symbol1"
+        app:layout_constraintTop_toBottomOf="@+id/numberEntered1" />
+
+    <TextView
+        android:id="@+id/to_symbol1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#00BCD4"
+        android:backgroundTint="#FFC107"
+        android:gravity="center_vertical"
+        android:minHeight="48dp"
+        android:text="@string/to_base1"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/fromSpinner1"
+        app:layout_constraintTop_toBottomOf="@+id/numberEntered1" />
+
+    <Spinner
+        android:id="@+id/toSpinner1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/to_symbol1"
+        app:layout_constraintTop_toBottomOf="@+id/numberEntered1" />
+
+    <Button
+        android:id="@+id/convert_button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/convert_button1"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/result1" />
+</androidx.constraintlayout.widget.ConstraintLayout>
